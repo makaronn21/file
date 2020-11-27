@@ -1,0 +1,223 @@
+/*Rull 이미지 갤러리 부분*/
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"); /*노토 산스 폰트*/
+
+/* 기본 스타일 (요소 높이/넓이 조정,폰트,폰트 굵기, 위치 조정, 크롬에서 텍스트 사이즈 100%*/
+*,::after,::before{box-sizing:border-box}:root{-moz-tab-size:4;tab-size:4}
+html{line-height:1.15;-webkit-text-size-adjust:100%}
+body{margin:0}body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}hr{height:0}
+b,strong{font-weight:bolder}
+code,kbd,pre,samp{font-family:SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-.25em}sup{top:-.5em}
+button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}
+button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{padding:0}progress{vertical-align:baseline}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
+
+/* 레이아웃 */
+
+/*전체에 적용할 코드*/
+html{
+  overflow:hidden;min-height:100vh;color:white;font-family:"Noto Sans KR",sans-serif;
+  font-size:12px;font-weight:400;line-height:1.5rem}
+
+  /*사진 들어갈 영역의 크기 지정*/
+.accordion{
+  position:relative;width:100vw;height:70vh}
+/*사진 들어갈 영역의 크기 지정*/
+.view{
+  overflow:hidden;position:relative;
+  display:-webkit-box;display:-ms-flexbox;
+  display:flex; /*block랑 비슷함*/
+  width:100%;height:100%}
+
+.view-item{
+  overflow:hidden;position:relative;
+  height:100%;cursor:pointer;
+  -webkit-flex:1;-ms-flex:1;flex:1;
+
+  /*크롬, 파이어폭스등에서 보이도록 하는 코드*/
+  -webkit-transition:all 480ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+  -moz-transition:all 480ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  -o-transition:all 480ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  -ms-transition:all 480ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  /*모든 속성에 트렌지션을 줌*/
+  transition:all 480ms cubic-bezier(0.445, 0.050, 0.550, 0.950)} 
+
+  /*클릭시 커지오록*/
+.view-item.selected{
+  cursor:default;-webkit-flex-grow:0;flex-grow:0;
+  -webkit-flex-shrink:0;flex-shrink:0;flex-basis:30vw}
+
+  /*내부 이미지 흐리게 조정하기위해 검정에 오퍼시티줌*/
+.view-item::before{
+  content:"";display:block;position:absolute;
+  z-index:1;top:0;right:0;bottom:0;left:0;background-color:rgba(58, 49, 49, 0.4)}
+
+  /*absolute로 이미지 박스에 맞춤*/
+.view-item .image-wrap{
+  position:absolute;top:0;right:0;bottom:0;left:0}
+
+.view-item .menu-collapse{
+  position:absolute;z-index:2;top:50%;left:50%;
+  /*위치 변경하기 위한 코드*/
+  -webkit-transform:translateX(-50%) translateY(-50%) rotate(90deg);
+  -moz-transform:translateX(-50%) translateY(-50%) rotate(90deg);
+  -o-transform:translateX(-50%) translateY(-50%) rotate(90deg);
+  -ms-transform:translateX(-50%) translateY(-50%) rotate(90deg);
+  transform:translateX(-50%) translateY(-50%) ;
+  /*transform-origin 회전할 중심 구하는 코드 */
+  -webkit-transform-origin:center center;-moz-transform-origin:center center;
+  -o-transform-origin:center center;-ms-transform-origin:center center;
+  transform-origin:center center;-webkit-transition:all 180ms 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  /*모든 속성에 트렌지션을 줌*/
+  -moz-transition:all 180ms 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  -o-transition:all 180ms 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  -ms-transition:all 180ms 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  transition:all 180ms 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950)}
+
+  /*텍스트 위치,디자인설정 하기 위한 코드*/
+.view-item .menu-collapse span{
+  overflow:hidden;display:block;position:relative;
+  white-space:nowrap; /*연속 공백 X html br로만 내려가짐*/
+  text-transform:uppercase;
+  font-size:2.167rem;font-weight:700;line-height:1.667rem}
+
+  /*검은 줄이 가운데를 기점으로 차오르게 하는 애니메이션을 주기위한 코드*/
+.view-item .menu-collapse span::before{
+  content:"";display:block;position:absolute;z-index:-1;top:50%;left:50%;width:0;height:0;
+  border-bottom:20px solid rgb(0, 0, 0);
+  /*위치 설정*/
+  -webkit-transform:translateX(-50%) translateY(-50%);
+  -moz-transform:translateX(-50%) translateY(-50%);
+  -o-transform:translateX(-50%) translateY(-50%);
+  -ms-transform:translateX(-50%) translateY(-50%);
+  transform:translateX(-50%) translateY(-50%);
+  /*width값에 트렌지션*/
+  -webkit-transition:width 240ms cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  -moz-transition:width 240ms cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  -o-transition:width 240ms cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  -ms-transition:width 240ms cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  transition:width 240ms cubic-bezier(0.550, 0.055, 0.675, 0.190)}
+
+  /*menu-collapse 호버시 사라지게 하기위한 트렌지션*/
+.view-item.selected .menu-collapse{
+  visibility:hidden;margin-top:-15px;opacity:0;
+  -webkit-transition-delay:0ms;-moz-transition-delay:0ms;
+  -o-transition-delay:0ms;-ms-transition-delay:0ms;transition-delay:0ms}
+/*검은색의 width값*/
+.view-item:hover .menu-collapse span::before{width:100%}
+
+/*텍스트 위치 정렬 센터*/
+.view-item .menu-view{
+  display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;z-index:2;
+  width:100%;height:100%;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  -webkit-box-orient:vertical;
+  -ms-flex-direction:column;
+  flex-direction:column}
+
+  /*span 태그 가진 요소 전부 애니메이션 효과주기*/
+.view-item .menu-view span{
+  display:block;visibility:hidden;position:relative;opacity:0;
+  -webkit-transition:all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  -moz-transition:all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  -o-transition:all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  -ms-transition:all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  transition:all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950)}
+
+  /*타이틀 위치 10px내려오게하고 폰트 설정(크기,굵기)*/
+.view-item .menu-view span.title{
+  text-transform:uppercase; font-size:1.667rem;font-weight:700;line-height:2.167rem;
+  -webkit-transform:translateY(10px);-moz-transform:translateY(10px);
+  -o-transform:translateY(10px);-ms-transform:translateY(10px);
+  transform:translateY(10px)}
+
+/*안의 내부 텍스트 센터 맞춤*/
+.view-item .menu-view span.desc{
+  font-size:1.167rem;line-height:1.667rem; text-align: center;
+  -webkit-transform:translateY(30px);-moz-transform:translateY(30px);
+  -o-transform:translateY(30px);-ms-transform:translateY(30px);
+  transform:translateY(30px)}
+
+/*위에서 간격 띄우기*/
+.view-item .menu-view span.title + span.desc{margin-top:8px}
+
+/*텍스트 뜨는 시간 지연*/
+.view-item.selected .menu-view span{
+  /*텍스트 보여지게 visible 코드 삽입*/
+  visibility:visible;opacity:1;
+  -webkit-transition-delay:180ms;-moz-transition-delay:180ms;
+  -o-transition-delay:180ms;-ms-transition-delay:180ms;
+  transition-delay:180ms}
+
+/*클릭했을때 내부 글씨들의 애니메이션효과*/
+.view-item.selected .menu-view span.title{
+  -webkit-transform:translateY(0);-moz-transform:translateY(0);
+  -o-transform:translateY(0);-ms-transform:translateY(0);
+  transform:translateY(0)}
+/*클릭했을때 내부 글씨들의 애니메이션효과*/
+.view-item.selected .menu-view span.desc{
+  -webkit-transform:translateY(0);-moz-transform:translateY(0);
+  -o-transform:translateY(0);-ms-transform:translateY(0);
+  transform:translateY(0)}
+
+  /*이미지가 가득차도록 설정*/
+.view-item img{display:block;width:100%;height:100%;
+  /*사각형 박스가 있으면 거기에 full로 차는 코드*/
+  object-fit:cover}
+
+/*닫기버튼이 오른쪽에서 나오도록하는 동작*/
+.view-item .btn-close{
+  position:absolute;
+  z-index:2;top:0;right:0;width:40px;height:40px;padding:10px;pointer-events:none; /*커서 클릭상태 없는걸로 설정 */
+  /*위치 설정*/
+  -webkit-transform:translateX(100%);-moz-transform:translateX(100%);
+  -o-transform:translateX(100%);-ms-transform:translateX(100%);
+  transform:translateX(100%);
+  /*나오게하는 속도*/
+  -webkit-transition:-webkit-transform 200ms 80ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  -moz-transition:-moz-transform 200ms 80ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  -o-transition:-o-transform 200ms 80ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  -ms-transition:-ms-transform 200ms 80ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  transition:transform 200ms 80ms cubic-bezier(0.455, 0.030, 0.515, 0.955)}
+
+  /*검은 동그라미 / 위치설정 및 둥글게 하기위한 border-radius*/
+.view-item .btn-close span{
+  overflow:hidden;display:block;position:relative;
+  width:100%;height:100%;background-color:#000;border-radius:50%}
+  
+  /*X 표시 위치 및 색상*/
+.view-item .btn-close span::before,.view-item .btn-close span::after{
+  content:"";display:block;position:absolute;
+  top:50%;left:50%;width:12px;height:0;height:0;border-top:1px solid #fff}
+  
+/*X모양 만들기 위한 코드*/
+.view-item .btn-close span::before{
+  -webkit-transform:translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform:translateX(-50%) translateY(-50%) rotate(45deg);
+  -o-transform:translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform:translateX(-50%) translateY(-50%) rotate(45deg);
+  transform:translateX(-50%) translateY(-50%) rotate(45deg)}
+/*위와 동일*/
+.view-item .btn-close span::after{
+  -webkit-transform:translateX(-50%) translateY(-50%) rotate(-45deg);
+  -moz-transform:translateX(-50%) translateY(-50%) rotate(-45deg);
+  -o-transform:translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform:translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform:translateX(-50%) translateY(-50%) rotate(-45deg)}
+
+/*닫기 버튼 들어갈때 속도 늦추기*/
+.view-item.selected .btn-close{
+  pointer-events:auto;
+  -webkit-transform:translateX(0);
+  -moz-transform:translateX(0);-o-transform:translateX(0);
+  -ms-transform:translateX(0);transform:translateX(0);
+  -webkit-transition-delay:480ms;-moz-transition-delay:480ms;
+  -o-transition-delay:480ms;-ms-transition-delay:480ms;
+  transition-delay:480ms}

@@ -1,0 +1,185 @@
+/*상단 메뉴와 How Play1,2의 코드*/
+
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+body{background-color: black;} /*전체 배경 black*/
+a{text-decoration: none; color: white;} /*하이퍼링크 스타일 none, 글자색 white*/
+
+body > header{text-align: center; margin: 0 auto; width: 1476px; height: 220px;} /*헤더 width height 지정*/
+body > header > a >img{float: left; padding-top: 25px;} /*이미지 위치 설정*/
+body > header > ul.header-ul{float: right; font-size: 25px; } /*링크 텍스트 위치, 사이즈*/
+body > header > ul.header-ul > li{padding-left: 50px; padding-top: 90px; display: inline-block; color: white; list-style: none; font-weight: bold;} /*링크 텍스트 스타일, 세부 위치설정*/
+
+
+body > footer{ /*푸터 위치 센터 맞추기*/
+    margin: 0 auto; 
+    text-align: center;
+    width: 500px; height: 100px;
+    padding-top: 100px;
+    padding-left: 160px;
+}
+
+
+/* How Play */
+body > section.Howlink{
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 30%;
+    height: 200px;
+    text-align: center;
+}
+/*Player 링크 위치 설정*/
+body > section.Howlink > div.P1div1{ 
+    font-size: 30px; font-weight: bold;
+    margin: 0 auto; 
+}
+/*KP 링크 위치 설정*/
+body > section.Howlink > div.P1div2{
+    font-size: 30px; font-weight: bold;
+    margin: 0 auto; 
+    float: right;
+}
+/* Player, Kp 텍스트 글자 색상 , float로 위치 조절*/
+body > section.Howlink > div.P1div1> a > p.P1{
+    float: left; color: white;
+}
+body > section.Howlink > div.P1div1> a > p.P2{
+    color: red; float: left;
+}
+body > section.Howlink > div.P1div2> a > p.P3{
+    float: left; color: white;
+}
+body > section.Howlink > div.P1div2> a > p.P4{
+    color: red; float: left;
+}
+
+/*가운에 들어갈 이미지 center로 맞추기*/
+body > div.HowMainimg{
+    margin: 0 auto; 
+    text-align: center;
+}
+/*-----------------*/
+
+/*첫번째 영역 지정*/
+body > section.How1{
+    margin: 0 auto;  
+    width: 1476px; height: 590px;
+    padding-top: 171px;
+}
+/*첫번째 영역 텍스트의 위치 조정*/
+body > section.How1 > div.How1S{padding-left: 200px; height: 50px;}
+
+
+/*첫번째 영역 텍스트 h2와 p의 색상,위치 설정*/
+body > section.How1 > div.How1S >h2{
+    color: red; float: left; font-size: 30px;
+}
+body > section.How1 > div.How1S >p{
+    color: white; float: left; font-size: 18px;
+    padding-left: 35px; padding-top: 13px;
+}
+
+/*이미지 위치 설정*/
+body > section.How1 > div.How1img{
+    padding-top: 129px;
+    padding-left: 279px;
+    width: 220px;
+    float: left;
+    margin: 0 auto; 
+}
+
+/*설명 텍스트 위치 조정*/
+body > section.How1 > div.How1P{
+    padding-top: 129px;
+    padding-right: 379px;
+    color: white; float: right; 
+    line-height: 30px;
+    font-size: 20px;
+
+} 
+/*설명 텍스트 위치 조정*/
+body > section.How1 > div.How1P > p.How1PTop{
+    padding-top: 30px;
+
+} 
+/*설명 텍스트 위치 조정*/
+body > section.How1 > div.How1P > p.How1Pleft{
+    padding-left: 35px;
+
+} 
+
+/*------------------------*/
+/*두번째 영역 지정*/ /*위의 첫번째 영역 지정과 동일한 코드 사용*/
+body > section.How2{
+    margin: 0 auto;  
+    width: 1476px; height: 590px;
+}
+body > section.How2 > div.How2S{padding-left: 200px; height: 50px;}
+body > section.How2 > div.How2S >h2{
+    color: red; float: left; font-size: 30px;
+}
+body > section.How2 > div.How2S >p{
+    color: white; float: left; font-size: 18px;
+    padding-left: 35px; padding-top: 13px;
+}
+body > section.How2 > div.How2img{
+    padding-top: 70px;
+    padding-left: 279px;
+    width: 220px;
+    float: left;
+    margin: 0 auto; 
+}
+body > section.How2 > div.How2P{
+    padding-top: 129px;
+    padding-right: 329px;
+    color: white; float: right; 
+    line-height: 30px;
+    font-size: 20px;
+
+} 
+
+/*------------------------*/
+/*세번째 영역 지정*/ /*위의 첫번째 영역 지정과 동일한 코드 사용*/
+body > section.How3 > div.How2P > p.How2PTop{
+    padding-top: 50px;
+} 
+body > section.How3{
+    margin: 0 auto;  
+    width: 1476px; height: 390px;
+}
+body > section.How3 > div.How3S{padding-left: 200px; height: 50px;}
+body > section.How3 > div.How3S >h2{
+    color: red; float: left; font-size: 30px;
+}
+body > section.How3 > div.How3S >p{
+    color: white; float: left; font-size: 18px;
+    padding-left: 35px; padding-top: 13px;
+}
+body > section.How3 > div.How3img{
+    padding-top: 130px;
+    padding-left: 279px;
+    width: 220px;
+    float: left;
+    margin: 0 auto; 
+}
+body > section.How3 > div.How3P{
+    padding-top: 129px;
+    padding-right: 269px;
+    color: white; float: right; 
+    line-height: 30px;
+    font-size: 20px;
+
+} 
+body > section.How3 > div.How3P > p.How3PTop{
+    padding-top: 20px;
+} 
+body > section.How3 > div.How3P > p.How3PSmall{
+    font-size: 14px;
+} 
+
+
+
+/* 룰북 */
+body > section.RollMain{
+    margin: 0 auto; text-align: center;
+    padding-top: 150px;
+}
