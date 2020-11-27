@@ -1,0 +1,49 @@
+body{width: 100%; background-color: rgb(226, 209, 202);}
+
+
+ul>a>li{float: right; list-style: none;}
+ul>a>li.menu-area1:hover{width: 6%;transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);}
+ul>a>li.menu-area1{ float: right;width: 5%; height: 937px; background-size: cover; background-color: rgb(187, 187, 187);}
+ul>a>li.menu-area2:hover{width: 6%;transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);}
+ul>a>li.menu-area2{float: right; width: 5%; height: 937px; background-size: cover; background-image: url(../IMG/old.jpg);
+    background-size: cover;
+    background-position: center;}
+ul>a>li.menu-area3:hover{width: 6%;transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);}
+ul>a>li.menu-area3{float: right;width: 5%; height: 937px; background-size: cover; background-image: url(../IMG/brushes.jpg); background-size: cover;
+    background-position: center;}
+ul>a>li.menu-area4:hover{width: 6%;transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);}
+ul>a>li.menu-area4{float: right;width: 5%; height: 937px; background-size: cover; background-image: url(../IMG/game.jpg); background-size: cover;
+    background-position: center;}
+ul>a>li.menu-area5:hover{width: 6%;transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);}
+ul>a>li.menu-area5{float: right;width: 5%; height: 937px; background-size: cover; background-image: url(../IMG/code.jpg); background-size: cover;
+    background-position: center;}
+
+
+ul>a>li >p{  
+    writing-mode: tb-rl; color: white; 
+    font-size: 35px; font-weight: 800;
+    text-shadow: 4px 2px 2px rgb(32, 32, 32);
+}
+
+div.back-area{padding-left: 8%; padding-top: 23%; float: left; text-align: center;}
+div.back-area2{padding-left: 8%; padding-top: 22%; float: left; text-align: center;}
+div.back-area3{padding-left: 2%; padding-top: 18%; float: left; text-align: center;}
+div.back-area4{padding-left: 5%; padding-top: 14%; float: left; text-align: center;}
+div.back-area5{margin: 0 auto; width: 20%; height: 800px; left: 20%; /* position: fixed; display: flex; */padding-left: 5%; padding-top: 14%; float: left; text-align: center;}
+
+div.back-area>h1{font-size: 30px; letter-spacing: 10px;}
+div.back-area>h2{color: rgb(102, 102, 102); font-weight: 400; letter-spacing: 10px;}
+div.back-area2>h1{font-size: 30px; letter-spacing: 10px; padding-top: 10px;}
+div.back-area2>h2{font-weight: 400; letter-spacing: 10px; padding-top: 10px;}
+
+div.back-area4> img:hover{
+    position: fixed; display: flex; 
+    bottom: 10%; right: 30%; z-index: 2; width: 1100px;
+    transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);
+}
+div.back-area5> img:hover{
+    position: relative;
+    padding-right: 50%;
+    bottom: 10%; right: 10%; z-index: 2; width: 900px;
+    transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);
+}

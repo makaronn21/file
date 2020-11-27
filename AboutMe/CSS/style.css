@@ -1,0 +1,103 @@
+*{padding: 0; margin: 0; font-family: 'Noto Sans KR', sans-serif;}
+
+/* #Main-area{width: 100%;} */
+body{width: 100%;}
+
+body > section.Main-area{width: 100%; height: 100%;}
+
+/* 첫번째 에리어 */
+section.Main-area > a>
+div.Top-area{
+     text-align: center;
+     width: 100%; height: 33.333%; 
+     position: absolute; display:table;
+    }
+section.Main-area > a>
+div.Top-area > div.TopText-area{
+    background-image: url(../IMG/old.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%; display:table-cell;
+}
+section.Main-area > a>
+div.Top-area > div.TopText-area
+>h1{padding-top: 120px; text-shadow: 4px 2px 2px rgb(32, 32, 32);color: rgb(238, 238, 238); font-size: 50px;font-weight: 800;}
+section.Main-area > a>
+div.Top-area > div.TopText-area
+>h1:hover{cursor: pointer;font-size: 55px; transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);}
+
+/* 두번째 에리어 */
+section.Main-area > 
+div.Midlle-area{
+    text-align: center;
+    top: 33.333%;
+    position: absolute;
+    width: 100%; height: 33.333%; 
+     background-color: rgb(187, 187, 187);
+     position: absolute;
+     cursor: default;}
+
+section.Main-area > 
+div.Midlle-area > div.MidlleText-area{
+    height: 100%
+}
+
+section.Main-area > 
+div.Midlle-area > div.MidlleText-area> 
+h1{padding-top: 100px; font-size: 50px; font-weight: 800; text-shadow: 4px 4px 0px #ebe0e0;}
+
+/* 세번째 에리어 */
+section.Main-area > 
+div.bottom-area{
+    text-align: center;
+    background-origin: padding-box;
+    bottom: 0;
+    position: absolute;
+    width: 100%; height: 33.333%; 
+     background-color: white;
+     position: absolute;}
+
+section.Main-area > 
+div.bottom-area > div.bottomText-area{
+    height: 100% 
+}
+
+section.Main-area > 
+div.bottom-area > div.bottomText-area
+>ul{height: 100%; list-style-type: none;}
+
+section.Main-area > 
+div.bottom-area > div.bottomText-area
+>ul >a> li.img-area1{
+    width: 33.333%;
+    height: 100%; float: left;
+    background-image: url(../IMG/brushes.jpg); background-size: cover;
+    background-position: center;
+}
+section.Main-area > 
+div.bottom-area > div.bottomText-area
+>ul >a> li.img-area2{
+    width: 33.333%;
+    height: 100%;
+    float: left;
+    background-image: url(../IMG/game.jpg); background-size: cover;
+    background-position: center;
+}
+section.Main-area > 
+div.bottom-area > div.bottomText-area
+>ul > a>li.img-area3{
+    width: 33.333%;
+    height: 100%; float: left;
+    background-image: url(../IMG/code.jpg); background-size: cover;
+    background-position: center;
+}
+section.Main-area > 
+div.bottom-area > div.bottomText-area
+>ul >a> li > p{padding-top: 150px; color: white; font-size: 50px; font-weight: 800;
+text-shadow: 4px 2px 2px rgb(32, 32, 32);}
+
+section.Main-area > 
+div.bottom-area > div.bottomText-area
+>ul >a> li >p:hover{cursor: pointer;font-size: 55px; transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);}
+
+
