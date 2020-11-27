@@ -1,0 +1,289 @@
+*{margin: 0; padding: 0;}
+@font-face 
+{ font-family: "210 M고딕"; 
+    src: url(../M고딕/210\ M고딕\ 080.ttf); 
+    }
+
+    @font-face 
+{ font-family: "210 M고딕"; 
+    src: url(../M고딕/210\ M고딕\ 090.ttf);
+    font-weight: bold; }
+
+body{
+    overflow-x: hidden; overflow-y: auto;
+    font-family: "210 M고딕";
+}
+
+body > section.sec1{
+    margin: 0 auto; 
+    width: 1920px; height: 1003px; 
+    background-color: white;}
+body > section.sec1> div.Main1{width: 1691px; height: 776px; }
+body > section.sec1> div.Main1 > div.header1{
+    padding-top: 319px; padding-left: 240px;
+    width: 443px; height: 230px; 
+    /* background-color: violet; */
+    float: left; 
+    z-index: 5;
+    position: absolute;
+}
+body > section.sec1> div.Main1 > div.header1 >p{
+    font-size: 34px; padding-top: 49px;
+}
+
+body > section.sec1> div.Main1 > div.header2{
+    float: left; /* display: block; */
+    position: absolute;
+    text-align: right;
+    padding-left: 590px;
+    padding-top: 198px;
+}
+
+/* 2번째 */
+body > section.sec2{
+    margin: 0 auto; 
+    width: 1920px; height: 1088px; 
+    background-image: url(../img/sec2back.jpg);
+}
+body > section.sec2 > div.Main2> div.sec2p{
+        padding-top: 405px; padding-left: 246px; position: absolute;
+}
+body > section.sec2 > div.Main2> div.sec2p >p.ph1{
+    width: 480px; height: 177px;
+    color: white; font-size: 60px;
+}
+body > section.sec2 > div.Main2>div.sec2p > p.ph2{
+        width: 632px; height: 78px;
+        color: white; font-size: 24px;
+        letter-spacing: 1.5px;
+
+}
+body > section.sec2 > div.Main2> img{
+    float: right;
+    padding-top: 108px;
+    padding-right: 160px;
+}
+
+/* 3번째 */
+body > section.sec3{
+    margin: 0 auto; 
+    width: 1920px; height: 1039px; 
+    background-image: url(../img/sec3back.jpg);
+}
+body > section.sec3 > div.sec3p{
+    padding-top: 149px;
+    color: white;
+    font-size: 24px;
+    margin: 0 auto;
+    text-align: center;
+}
+body > section.sec3 > div.sec3p > p.sec3bold{
+    padding-top: 33px;
+    font-size: 54px;
+}
+body > section.sec3 > div >img{
+    padding-top: 76px;
+    display: block; 
+    margin: 0 auto;
+}
+body > section.sec4{
+    margin: 0 auto; 
+    width: 1920px; height: 1166px; 
+}
+body > section.sec4 > div.sec4img{
+    padding-left: 270px;
+    padding-top: 199px;
+    float: left;
+}
+body > section.sec4 > div.sec4p{
+    padding-left: 90px;
+    padding-top: 521px;
+    float: left;
+    margin: 0 auto;
+    width: 472px;
+    font-size: 60px;
+    color: #31d7ad;
+}
+body > section.sec4 > div.sec4p > p.sec4small{
+    padding-top: 44px;
+    width: 546px;
+    font-size: 24px;
+    color: #31d7ad;
+}
+
+/* 5번째 */
+body > section.sec5{
+    margin: 0 auto; 
+    width: 1920px; height: 1039px; 
+    background-image: url(../img/sec5back.jpg);
+}
+body > section.sec5 > div.sec5p{
+    padding-top: 165px;
+    padding-left: 123px;
+    font-size: 54px;
+    float: left;
+    color: white;
+}
+
+body > section.sec5 > div.sec5p > p.sec5small{
+    padding-top: 46px;
+    font-size: 24px;
+    float: left;
+    color: white;
+}
+body > section.sec5 > div.sec5img{
+    position: relative;
+    padding-top: 419px;
+    /* position: absolute; */
+    margin: 0 auto; 
+}
+
+/* 6번째 */
+body > section.sec6{
+    margin: 0 auto; 
+    width: 1920px; height: 1320px; 
+    background-color: white;
+    text-align: center;
+}
+body > section.sec6 > div.sec6p{
+    color: #31d7ad;
+    font-size: 24px;
+    padding-top: 234px;
+    margin: 0 auto; 
+}
+body > section.sec6 > div.sec6p > p.sec6bold{
+    color: #31d7ad;
+    font-size: 54px;
+    padding-top: 29px;
+    margin: 0 auto; 
+}
+body > section.sec6 > div.sec6img{
+    padding-top: 74px;
+    margin: 0 auto; 
+}
+
+/* 7번째 */
+
+body > section.sec7{
+    margin: 0 auto; 
+    width: 1920px; height: 1011px; 
+    background-image: url(../img/sec7back.jpg);
+}
+body > section.sec7 > div.sec7p{
+    margin: 0 auto;
+    color: #31d7ad; text-align: center;
+}
+body > section.sec7 > div.sec7p > p.sec7p-big{
+    font-size: 54px; padding-top: 186px;
+}
+body > section.sec7 > div.sec7p > p.sec7p-small{
+    font-size: 24px; padding-top: 46px;
+}
+body > section.sec7 > div.sec7img{
+    margin: 0 auto; padding-top: 24px;
+}
+
+/* 8번째 */
+body > section.sec8{
+    margin: 0 auto; 
+    width: 1920px; height: 1074px; 
+    background-image: url(../img/sec8back.jpg);
+}
+body > section.sec8 > div.sec8p{
+    margin: 0 auto;
+    color: #31d7ad; float: left; width: 733px; height: 342px;
+    padding-top: 406px; padding-left: 229px;
+}
+body > section.sec8 > div.sec8p > p.sec8p-big{
+    font-size: 60px;
+}
+body > section.sec8 > div.sec8p > p.sec8p-small{
+    font-size: 24px; padding-top: 52px;
+}
+
+/* 9번째 */
+body > section.sec9{
+    margin: 0 auto; 
+    width: 1920px; height: 1092px; 
+    background-image: url(../img/sec9back.jpg);
+}
+body > section.sec9 > div.sec9p{
+    margin: 0 auto;
+    color: white; float: center; width: 1371px; height: 109px;
+    padding-top: 106px; /* padding-left: 176px */;
+}
+body > section.sec9 > div.sec9p > p.sec9p-big{
+    font-size: 54px;  margin: 0 auto; float: left;
+}
+
+
+body > section.sec9 > div.sec9p > p.sec9p-small{
+    margin: 0 auto; float: left;
+    font-size: 24px; 
+    padding-top: 82px; 
+    padding-left: 64px;
+}
+
+body > section.sec9 > div.sec9img{
+    margin: 0 auto; 
+    padding-top: 65px;
+    text-align: center;
+}
+
+/* 10번째 */
+body > section.sec10 > div.sec10img{
+    margin: 0 auto; 
+    width: 1920px; height: 1151px; 
+    background-image: url(../img/sec10back.jpg);
+}
+
+/* 11번째 */
+body > section.sec11{
+    margin: 0 auto; 
+    width: 1920px; height: 1124px; 
+}
+body > section.sec11 > div > p{
+    text-align: center; font-size: 72px;
+    padding-top: 121px;
+}
+
+body > section.sec11 > div.sec11div{
+    margin: 0 auto; text-align: center;
+    width: 1280px; height: 720px; padding-top: 19px;
+}
+
+/* 12번째 */
+body > section.sec12{
+    margin: 0 auto; 
+    width: 1920px; height: 1042px; 
+    background-image: url(../img/sec9back.jpg);
+}
+
+body > section.sec12 > div.sec12-div1{
+    margin: 0 auto; 
+    width: 517px; height: 517px; 
+    background-image: url(../img/footer.png);
+    margin-left: 188px; margin-top: 328px;
+    float: left;
+}
+body > section.sec12 > div.sec12-div1 > p.sec12-p{
+    text-align: center;  z-index: 12; top: 0; bottom: 0; 
+    padding-top: 5em; font-size: 25px; color: #31d7ad;
+}
+body > section.sec12 > div.sec12-div2{
+    margin: 0 auto; 
+    width: 517px; height: 517px; 
+    background-image: url(../img/footer.png);
+    margin-top: 328px;
+    float: left;
+}
+body > section.sec12 > div.sec12-div2 > p.sec12-p{
+    text-align: center;  z-index: 12; top: 0; bottom: 0; 
+    padding-top: 5em; font-size: 25px; color: #31d7ad;
+}
+
+body > section.sec12 > div > p.sec12-p2{
+    text-align: center;  z-index: 12; top: 0; bottom: 0; 
+    padding-top: 70px; font-size: 45px; color: #819991;
+    padding-left: 30px;
+}
