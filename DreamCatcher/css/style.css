@@ -1,0 +1,177 @@
+* { margin: 0; padding: 0; }
+
+body{background-color: black; height: 200px;}
+.logo{display: block; width: 1000px; margin: 0px auto;}
+a:link {text-decoration: none; color: white;}
+a:visited {text-decoration: none; color: white;}
+a:hover {text-decoration: underline; color: white;}
+
+/* 상단 메뉴 */
+.titletext{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    columns: 4;
+    font-family: 'Lobster', cursive;
+}
+
+/* 메인 img */
+.md1{
+    display: block; width: 1500px;  margin: 0px auto;
+    margin-top: 20px;                                               
+    
+}
+
+/* 메인 text */
+.rabel{
+    top: 20px;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 30px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+/* 멤버1 img */
+.mem1 img{
+    width: 700px; border:1px solid white; float:left; margin-right:10px;
+    margin-left: 81px;
+    margin-top: 70px;
+
+}
+
+/* 멤버1 이름 text */
+.memm1{
+    width: 500px; border:1px solid white; float:left;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 60px;
+    margin-top: 70px;
+    margin-left: 81px;
+    color: white;
+}
+
+/* 멤버2 img */
+.mem2 img{
+    width: 700px; border:1px solid white; float:right; margin-right:10px;
+    margin-left: 81px;
+    margin-right: 81px;
+    margin-top: 70px;
+
+}
+
+/* 멤버2 이름 text */
+.memm2{
+    width: 500px; border:1px solid white; float:right;
+    font-family: 'Noto Sans SC', sans-serif;
+    text-align: right;
+    font-size: 60px;
+    margin-top: 70px;
+    margin-left: 81px;
+    margin-right: 81px;
+    color: white;
+}
+
+/* 멤버1 text */
+.memm3{
+    width: 500px;  float:left;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 81px;
+    margin-right: 81px;
+    color: white;
+}
+
+/* 멤버2 text */
+.memm4{
+    width: 500px;  float:right;
+    text-align: right;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 81px;
+    margin-bottom: 50px;
+    margin-right: 81px;
+    color: white;
+}
+
+/* 앨범 img */
+.al img{
+    display: block; width: 1500px;  margin: 0px auto;
+    width: 400px; float:center;
+    margin-top: 70px;
+}
+
+/* 앨범 타이틀 */
+.altext{
+    display: block; width: 800px;  margin: 0px auto;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    float:center;
+    margin-top: 50px;
+    color: white;
+}
+
+/* 앨범 제목 */
+.altext1{
+    display: block; width: 800px;  margin: 0px auto;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    float:center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* 싱글/미니/오리지널 블럭 */
+.al2text{
+    display: block; width: 1500px;  margin: 0px auto;
+    border:1px solid white;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+/* 앨범 / 상단으로 올라가기 */
+.altext3{
+    display: block; width: 300px;  margin: 0px auto;
+    border:1px solid white;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+/* 뮤직비디오 왼쪽 */
+.movie{
+    width: 720px; border:1px solid white; float:left; margin-right:10px;
+    margin-left: 200px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+/* 뮤직비디오 오른쪽 */
+.movie2{
+    width: 720px; border:1px solid white; float:right; margin-right:10px;
+    margin-left: 20px;
+    margin-right: 200px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+/* 유튜브 홈페이지 이동 */
+.altext4{
+    display: block; width: 300px;  height: 80px; margin: 0px auto;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
