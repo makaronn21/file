@@ -1,0 +1,130 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+  }
+  /*이미지 안에 들어갈 고정된 텍스트 h2,h3,p(3개 모두 동일)*/
+  #Main h2 {
+    padding-top: 0.5em; /*위에서 0.5em 띄우기*/
+    font-family: "Oswald", sans-serif; /*폰트 사용할것*/
+    font-size: 60px;
+    letter-spacing: 10px; /*글자 간격 설정*/
+    text-align: center; /*글자 센터 정렬*/
+    color: white; 
+    font-weight: 600; /*글자 두께*/
+    text-transform: uppercase; /*소문자 >> 대문자*/
+    z-index: 10; /*글자 위치 1~10층까지 있으면 10층 위에 있음*/
+    opacity: 0.9; /*오퍼시티 0.9*/
+  }
+  /*h2의 오랜지색 글씨*/
+  #Main h2.h2Orange{
+    color: #ff9b4b;
+    font-size: 30px;
+    opacity: 0.9;/*오퍼시티 0.9*/
+  }
+  /*Main h2 동일하기 때문에 생략 했습니다*/
+  #Main h3 {
+    font-family: "Oswald", sans-serif;
+    padding-top: 0.7em;
+    font-size: 50px;
+    line-height: 0;
+    font-weight: 400;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-align: center;
+    z-index: 10;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.9;
+  }
+  /*Main h2 동일하기 때문에 생략 했습니다*/
+  #Main p {
+    font-family: "Oswald", sans-serif;
+    padding-top: 1.7em;
+    font-size: 25px;
+    line-height: 0;
+    font-weight: 400;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 10;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.9;
+  }
+  /*위와 간격을 띄우기 위한 코드*/
+  #Main p.ptxtTop{
+    padding-top: 4em;
+    margin: 0 auto;
+  }
+/*첫번째 섹션으로 섹션 1,2,3,4 모두 동일 코드*/
+.section1 {
+    padding-top: 200px; /*사진 백그라운드 탑 200px을 줘서 그만큼 떨어트림*/
+    padding-bottom: 300px;/*사진 백그라운드 바텀 300px을 줘서 그만큼 떨어트림*/
+    overflow: hidden; /*지정된 백그라운드보다 넘칠시 안보이도록하는 코드*/
+    position: relative; /*위치 변경을 위한 코드*/
+    width: 100%;
+    background-image: url(../img/Main/MainImg1.jpg); /*백그라운드 이미지*/
+    background-attachment: fixed; /*백그라운드 고정*/
+    background-size: cover; /*배경을 full로 채울수 있도록 하는 코드*/
+    -webkit-background-size: cover; /*크롬에서 cover적용*/
+    background-repeat: no-repeat; /*이미지 반복 배열 X*/
+    background-position: top center; /*가운데 상단에 이미지 고정*/
+  }
+  /*배경 오퍼시티로 어둡게 표현*/
+  .dib::before{content:"";display:block;position:absolute;top:0;right:0;bottom:0;left:0;background-color:rgba(17, 16, 16, 0.4)}
+
+  /*첫번째 섹션 코드 동일로 생략*/
+  .section2 {
+    padding-top: 200px;
+    padding-bottom: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../img/Main/MainImg2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  /*section2의 붉은글씨*/
+  #Main>section>div.section2 > h2.sec2-top
+  {
+    color: red;
+  }
+  /*section2의 글자간격 띄우기*/
+  #Main>section>div.section2>p.ptxt
+  {
+    padding-top: 2em;
+  }
+  /*첫번째 섹션 코드 동일로 생략*/
+  .section3 {
+    padding-top: 200px;
+    padding-bottom: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../img/Main/MainImg3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  /*첫번째 섹션 코드 동일로 생략*/
+  .section4 {
+    padding-top: 200px;
+    padding-bottom: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../img/Main/MainImg4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
