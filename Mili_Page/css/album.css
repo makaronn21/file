@@ -1,0 +1,125 @@
+*{margin: 0; padding: 0;}
+
+@font-face {
+	font-family:'Megrim';
+	font-style: normal;
+	/* font-weight:600; */
+	src:local('☺︎'), url("../font/Megrim-Regular.ttf") format("Megrim");
+}
+@font-face {
+	font-family:'GOUDOS';
+	font-style: normal;
+	/* font-weight:600; */
+	src:local('☺︎'), url("../font/GOUDOS.TTF") format("GOUDOS");
+}
+.hover a:hover{
+  color:  #f1f1f1;
+  font-size: 27px;
+  font-weight: bold;
+  transition: all 0.3s; 
+  transform: scale(0.8); 
+ }
+li>a{text-decoration: none;color: #60b6b5;}
+header{ width: 100%; height: 149px; background-color: #122c41;}
+.header>li{float: left; padding-left: 100px; padding-top: 59px;
+    color: #60b6b5; font-size: 26px;
+    list-style: none; font-family: Megrim;}
+    li.logo{z-index: 5; position: absolute; top: -13px;}
+    .menu{margin-left: 9vw;}
+    .youtube{float: right; padding-top: 50px; padding-right: 100px;}
+
+/* body{overflow-x: hidden; overflow-y: auto;} */
+
+    section {
+        margin: 0;
+      }
+      
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      
+      .panels {
+        min-height: 85vh;
+        overflow: hidden;
+        display: flex;
+      }
+      .panels .panel {
+        color: white;
+        text-align: center;
+        align-items: center;
+        transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), 
+        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+        font-size: 20px;
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+      .panels .panel.panel1 {
+        overflow: hidden;
+        background-image: url(../img/album1.jpg);
+      }
+      .panels .panel.panel2 {overflow: hidden;
+        background-image: url(../img/album2.jpg);
+      }
+      .panels .panel.panel3 {overflow: hidden;
+        background-image: url(../img/album3.jpg);
+      }
+      .panels .panel > * {
+        margin: 0;
+        width: 100%;
+        transition: transform 0.3s;
+        /* flex: 1 0 auto; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .panels .panel > #f1 {
+        transform: translateX(100%);
+      }
+      .panels .panel > *:last-child {
+        transform: translateX(100%);
+      }
+      .panels .panel.open-active > #f1 {
+        transform: translateX(0);
+      }
+      .panels .panel.open-active > *:last-child {
+        transform: translateX(0);
+      }
+
+      .panels .panel > #center {
+        transform: translateX(0);
+      }
+      .panels .panel.open-active > #center {
+        transform: translateX(-100%);
+      }
+      .panels .panel.open {
+        /* font-size: 20px; */
+        flex: 2;
+      }
+      .panels .panel p {
+        /* text-transform: uppercase; */
+        /* position: relative; */
+        font-family: GOUDOS;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 
+        0 0 14px rgba(0, 0, 0, 0.45);
+        font-size: 1.2em;
+      }
+      .panels .panel #center {
+        font-family: Megrim;
+        /* position: absolute; */
+        z-index: 11;
+        font-size: 3em;
+      }
+      
+      .cta {
+        color: white;
+        text-decoration: none;
+      }
+      

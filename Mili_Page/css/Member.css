@@ -1,0 +1,52 @@
+*{margin: 0; padding: 0;}
+
+@font-face {
+	font-family:'Megrim';
+	font-style: normal;
+	/* font-weight:600; */
+	src:local('☺︎'), url("../font/Megrim-Regular.ttf") format("ttf");
+}
+@font-face {
+	font-family:'Goudy Old Style';
+	font-style: normal;
+/* 	font-weight:400; */
+	src:local('1'), url("../font/GOUDOSB.TTF") format("TTF");
+}
+.hover a:hover{
+ color:  #f1f1f1;
+ font-size: 27px;
+ font-weight: bold;
+ transition: all 0.3s; 
+ transform: scale(0.8); 
+}
+li>a{text-decoration: none;color: #60b6b5;}
+header{ width: 100%; height: 149px; background-color: #122c41;}
+.header>li{float: left; padding-left: 100px; padding-top: 59px;
+    color: #60b6b5; font-size: 26px;
+    list-style: none; font-family: 'Megrim';}
+    .menu{margin-left: 9vw;}
+    li.logo{z-index: 5; position: absolute; top: -13px;}
+    .youtube{float: right; padding-top: 50px; padding-right: 100px;}
+
+.member-background{width: 100%; height: 788px; background-color: #f1f1f1;}
+
+.member-img{float: left; padding-left: 10%; padding-top: 9%;}
+.member-big-text>h1{font-size: 112pt; color:  #122c41; 
+    letter-spacing: 30px;
+    font-weight: 400;
+    float: left; padding-left: 2%;padding-top: 7%;
+    font-family: 'Goudy Old Style';
+}
+.member-big-text>h2{position: absolute; z-index: 22;
+    padding-left: 57vw;
+    font-size: 20pt; font-family: 'Goudy Old Style'; font-weight: 400;
+    color: #60b6b5; letter-spacing: 5px;padding-top: 218px;}
+
+.line{ padding-top: 30vh;
+    margin-left: 38%; border-bottom: 3px solid #122c41; width: 740px;}
+
+.member-small-text{ left: 38%; padding-top: 4%; 
+    font-family: 'Goudy Old Style'; font-weight: 400;
+    float: left; position: absolute;}
+.member-small-text-Ul{list-style: none;}
+.member-small-text-Ul>li{line-height: 60px; color:  #122c41; font-size: 19pt;}

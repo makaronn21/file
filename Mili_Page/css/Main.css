@@ -1,0 +1,128 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+/* *, *:before, *:after {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+  } */
+  a{text-decoration: none; color: rgb(247, 239, 239);}
+@font-face {
+	font-family:'Goudy Old Style';
+	font-style: normal;
+/* 	font-weight:400; */
+	src:local('1'), url("../font/GOUDOSB.TTF") format("TTF");
+}
+@font-face {
+	font-family:'Megrim';
+	font-style: normal;
+	font-weight:600;
+	src:local('☺︎'), url("../font/Megrim-Regular.ttf") format("Megrim");
+}
+.hover a:hover{
+    color:  #f1f1f1;
+    font-size: 27px;
+    font-weight: bold;
+    transition: all 0.3s; 
+    transform: scale(0.8); 
+   }
+li>a{text-decoration: none;color: #60b6b5;}
+header{z-index: 11; position: fixed; width: 100%; height: 149px; background-color: #122c41;}
+.header>li{float: left; padding-left: 100px; padding-top: 59px;
+    color: #60b6b5; font-size: 26px;
+    list-style: none; font-family: Megrim;}
+    li.logo{z-index: 5; position: absolute; top: -13px;}
+    .menu{margin-left: 9vw;}
+    .youtube{
+        float: right; 
+        padding-top: 50px;
+         padding-right: 100px;}
+
+section.Main-img1>img{ width: 100%; vertical-align: bottom;}
+.Main-area1{
+    width: 100%;
+    padding-top: 400px;
+    padding-bottom: 550px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(../img/Main-img1.jpg); 
+    overflow: hidden; 
+    position: relative; }
+.Main-area1 .text{float: left; padding-left: 10%;  padding-top: 2.5%; color: white; position: absolute;}
+/* .Main-area1{float: left; padding-left: 10%;  padding-top: 20%; color: white; position: absolute;} */
+
+.text > h1{font-size: 88pt; letter-spacing: 40px; font-weight: bolder;} 
+.text > p{font-size: 18pt; letter-spacing: 20px; margin-top: 5px;}
+
+.Main-img2{vertical-align: bottom;}
+section.Main-img2>img{ width: 100%; vertical-align: bottom;}
+.Main-area2{
+    width: 100%;
+/*     margin-top: 100px; */
+    padding-top: 300px;
+    padding-bottom: 400px;
+    background-attachment: fixed;background-size: cover;
+    background-image: url(../img/Main-img2.jpg); 
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow: hidden; 
+    position: relative;}
+.Main-area2 .text{
+    text-align: center;
+     float: center;
+      padding-left: 14%; 
+       top: 255px;
+       color: white;
+        position: absolute;}
+.Main-area2>h1{font-size: 52pt; letter-spacing: 40px;font-weight: bolder; }
+.Main-area2>p{font-size: 18pt; letter-spacing: 20px;}
+
+.Youtube-area{
+    text-align: center; padding-top: 2em; padding-left: 610px;
+}
+.Youtube-boder{text-align: center;  
+    width: 201px; height: 4em; border: 2px solid white;}
+    .Youtube-text{padding-top: 16px; text-align: center;
+        font-size: 13pt; letter-spacing: 10px; }
+
+        .Youtube-boder:hover{cursor: pointer; background-color: #60b6b5;}
+        .Youtube-text:hover{font-size: 14pt;}
+
+.Main-area3{
+    text-align: center;
+    /* margin-top: 500px; */
+    position: relative;
+    padding-top: 1em; width: 100%; height: 356px; background-color: #122c41; color: white;}
+    .Main-area3-font{padding-top: 5%; padding-left: 4%;}
+    .Main-area3-font>h2{font-size: 24pt; letter-spacing: 20px; font-weight: bolder;}
+    .Main-area3-font>p{padding-top: 10px; font-size: 18pt; letter-spacing: 10px;}
+
+    .Yarea3{padding-left: 875px;}
+
+    .Main-img4{vertical-align: bottom;}
+    section.Main-img4>img{ width: 100%; vertical-align: bottom;}
+    .Main-area4{text-align: center; z-index: 999;
+         padding-left: 28%;  padding-top: 11%; 
+         color: white; position: absolute;}
+    .Main-area4>h1{font-size: 52pt; letter-spacing: 40px; }
+    .Main-area4>p{font-size: 18pt; letter-spacing: 20px;}
+
+    .Main-area4_1{text-align: center; z-index: 999;
+        padding-left: 22%;  padding-top: 11%; 
+        color: white; position: absolute;}
+    .Main-area4_1>h1{font-size: 52pt; letter-spacing: 40px;}
+    .Main-area4_1>p{font-size: 18pt; letter-spacing: 20px;}
+    .Main-area4_1>.Yarea4{padding-left: 460px;}
+
+    .Yarea4{padding-left: 350px;}
+
+    
+.Main-area5{text-align: center;
+    padding-top: 1em; width: 100%; height: 196px; background-color: #122c41; color: white;}
+    .Main-area5-font{padding-top: 7%;}
+    .Main-area5-font>h2{font-size: 24pt; letter-spacing: 20px; }
+    .Main-area5-font>p{padding-top: 10px; font-size: 12pt; letter-spacing: 10px;}
+
+    h1,h2,p{font-family: 'Goudy Old Style';}
